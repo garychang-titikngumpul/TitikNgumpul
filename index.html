@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TitikNgumpul — Esports Tournament</title>
+<meta name="description" content="TitikNgumpul esports tournament platform — season, registration, bracket, results and community.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#home"><img src="logo-titikngumpul.png" alt="TitikNgumpul"><span>Titik<span>Ngumpul</span></span></a>
+<nav><a href="#seasons">Season</a><a href="#bracket">Bracket</a><a href="#community">Community</a><a href="#jersey">Jersey</a></nav>
+<button class="gold-btn small" id="adminOpen">Admin</button>
+</header>
+<main>
+<section id="home" class="hero"><div>
+<div class="eyebrow"><i></i> TITIKNGUMPUL ESPORTS COMMUNITY</div>
+<h1>Tempat berkumpulnya<br><em>para juara.</em></h1>
+<p>Kelola tournament TitikNgumpul dengan season, registrasi tim, bracket, hasil pertandingan, dan sinkronisasi online. Admin dapat mengubah hasil dari HP dan pengunjung melihat data terbaru.</p>
+<div class="actions"><a class="gold-btn" href="#seasons">Lihat Tournament</a><a class="outline-btn" href="https://chat.whatsapp.com/CWr6KHPwlFFGxHJnWDrZiI" target="_blank" rel="noopener">Gabung WhatsApp</a></div>
+</div><div class="hero-logo"><img src="logo-titikngumpul.png" alt="Logo TitikNgumpul"></div></section>
+
+<section id="seasons" class="section"><div class="section-head"><div><div class="eyebrow">CURRENT SEASON</div><h2 id="seasonTitle">Memuat...</h2></div><select id="seasonSelect" class="select"></select></div>
+<div class="season-info"><div class="season-card"><span class="label">STATUS</span><h3 id="seasonStatus">—</h3><div class="meta"><span id="seasonTeams">0 Teams</span><span id="syncState">● Connecting...</span></div></div>
+<div class="season-card"><span class="label">REGISTRASI</span><h3 id="seasonRegistration">0 / 0 Teams</h3><div class="progress"><span id="registrationProgress"></span></div><p id="seasonDesc">—</p></div></div></section>
+
+<section id="bracket" class="section"><div class="section-head"><div><div class="eyebrow">LIVE BRACKET</div><h2>Bracket Tournament</h2></div><span class="hint">Update realtime</span></div><div id="bracketView" class="bracket"></div></section>
+
+<section id="community" class="section"><div class="section-head"><div><div class="eyebrow">OFFICIAL COMMUNITY</div><h2>Temukan TitikNgumpul</h2></div></div>
+<div class="community-grid"><a class="community-card" href="https://chat.whatsapp.com/CWr6KHPwlFFGxHJnWDrZiI" target="_blank" rel="noopener"><div class="icon">WA</div><div><b>WhatsApp Community</b><p>Gabung komunitas resmi TitikNgumpul.</p></div><span>↗</span></a>
+<a class="community-card" href="https://instagram.com/titikngumpul._" target="_blank" rel="noopener"><div class="icon">IG</div><div><b>@titikngumpul._</b><p>Instagram resmi TitikNgumpul.</p></div><span>↗</span></a></div>
+<div class="contact-panel"><div><div class="eyebrow">ADMIN & PANITIA</div><h3>Butuh bantuan?</h3><p>Hubungi tim TitikNgumpul.</p></div><div id="contacts" class="contacts"></div></div></section>
+
+<section id="jersey" class="section"><div class="section-head"><div><div class="eyebrow">TN MERCH</div><h2>Catalog Jersey</h2></div><span class="hint">Pesan melalui WhatsApp admin.</span></div>
+<div class="products"><article class="product"><div class="product-art"><img src="logo-titikngumpul.png" alt="TN Jersey"></div><div class="product-body"><span class="tag">BEST SELLER</span><h3>TN Esports Jersey</h3><p>Jersey komunitas TitikNgumpul.</p><button class="outline-btn order" data-product="TN Esports Jersey">Pesan Jersey</button></div></article>
+<article class="product"><div class="product-art alt"><img src="logo-titikngumpul.png" alt="TN Collared Jersey"></div><div class="product-body"><span class="tag">COLLARED</span><h3>TN Collared Jersey</h3><p>Versi berkerah dengan tampilan elegan.</p><button class="outline-btn order" data-product="TN Collared Jersey">Pesan Jersey</button></div></article>
+<article class="product"><div class="product-art dark"><img src="logo-titikngumpul.png" alt="Custom Team Jersey"></div><div class="product-body"><span class="tag">CUSTOM</span><h3>Custom Team Jersey</h3><p>Custom nama, nomor, dan identitas tim.</p><button class="outline-btn order" data-product="Custom Team Jersey">Tanya Admin</button></div></article></div></section>
+</main>
+<footer><div class="brand"><img src="logo-titikngumpul.png" alt=""><span>Titik<span>Ngumpul</span></span></div><p>© 2026 TitikNgumpul. Together We Grow.</p></footer>
+
+<div id="adminModal" class="modal"><div class="admin-shell"><button class="x" id="adminClose">×</button>
+<div id="loginPanel"><div class="eyebrow">SECURE ADMIN</div><h2>Admin TitikNgumpul</h2><p class="muted">Login untuk mengelola season, registrasi tim, bracket, dan hasil.</p><label>Email<input id="loginEmail" type="email" autocomplete="username" placeholder="admin@email.com"></label><label>Password<input id="loginPassword" type="password" autocomplete="current-password" placeholder="••••••••"></label><button class="gold-btn full" id="loginBtn">Login Admin</button><p id="loginMsg" class="form-msg"></p></div>
+<div id="adminPanel" class="hidden"><div class="admin-top"><div><div class="eyebrow">CONTROL CENTER</div><h2>Admin TitikNgumpul</h2></div><button class="outline-btn" id="logoutBtn">Logout</button></div>
+<div class="admin-tabs"><button class="at active" data-panel="seasonAdmin">Seasons</button><button class="at" data-panel="teamAdmin">Registrasi Tim</button><button class="at" data-panel="matchAdmin">Bracket</button></div>
+<div id="seasonAdmin" class="ap active"><div class="admin-row"><input id="newSeasonName" placeholder="TN Championship S02"><input id="newSeasonSize" type="number" min="2" max="128" value="16" title="Target registrasi"><button class="gold-btn" id="createSeason">+ Buat Season</button></div><div id="seasonList"></div></div>
+<div id="teamAdmin" class="ap"><div class="admin-row"><select id="adminSeasonSelect" class="select"></select><input id="newTeamName" placeholder="Nama tim terdaftar"><button class="gold-btn" id="addTeam">+ Tambah Tim</button></div><div class="admin-note">Jumlah Teams di halaman publik selalu mengikuti jumlah registrasi aktual. Target hanya batas maksimal registrasi.</div><div id="teamList"></div></div>
+<div id="matchAdmin" class="ap"><div class="admin-row"><select id="adminMatchSeason" class="select"></select><button class="outline-btn" id="generateBracket">Buat/Rebuild Bracket</button><button class="outline-btn" id="resetSeason">Reset Skor</button></div><div class="admin-note">Anda bisa mengoreksi nama tim dan skor kapan saja. Setelah disimpan, data masuk ke database online dan pengunjung menerima perubahan.</div><div id="matchEditor"></div><button class="gold-btn full" id="saveBracket">Simpan & Update Bracket</button></div>
+</div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="script.js"></script>
+</body></html>
