@@ -1,52 +1,92 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TitikNgumpul — Esports Tournament</title>
-<meta name="description" content="TitikNgumpul esports tournament platform — season, registration, bracket, results and community.">
+<title>TitikNgumpul — Esports Community</title>
+<meta name="description" content="TitikNgumpul esports team, tournaments, player and coach trials, jersey catalog, poster design and sponsorship.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="nav">
-<a class="brand" href="#home"><img src="logo-titikngumpul.png" alt="TitikNgumpul"><span>Titik<span>Ngumpul</span></span></a>
-<nav><a href="#seasons">Season</a><a href="#bracket">Bracket</a><a href="#community">Community</a><a href="#jersey">Jersey</a></nav>
-<button class="gold-btn small" id="adminOpen">Admin</button>
+<header class="topbar">
+  <a class="brand" href="#home"><img src="logo-titikngumpul.png" alt="TitikNgumpul logo"><span>TITIK<span>NGUMPUL</span></span></a>
+  <nav class="desktop-nav"><a href="#services">Menu</a><a href="#about">About</a><a href="#community">Community</a></nav>
+  <button class="admin-trigger" id="adminOpen">Admin</button>
 </header>
+
 <main>
-<section id="home" class="hero"><div>
-<div class="eyebrow"><i></i> TITIKNGUMPUL ESPORTS COMMUNITY</div>
-<h1>Tempat berkumpulnya<br><em>para juara.</em></h1>
-<p>Kelola tournament TitikNgumpul dengan season, registrasi tim, bracket, hasil pertandingan, dan sinkronisasi online. Admin dapat mengubah hasil dari HP dan pengunjung melihat data terbaru.</p>
-<div class="actions"><a class="gold-btn" href="#seasons">Lihat Tournament</a><a class="outline-btn" href="https://chat.whatsapp.com/CWr6KHPwlFFGxHJnWDrZiI" target="_blank" rel="noopener">Gabung WhatsApp</a></div>
-</div><div class="hero-logo"><img src="logo-titikngumpul.png" alt="Logo TitikNgumpul"></div></section>
+<section id="home" class="hero section-shell">
+  <div class="hero-copy">
+    <div class="kicker"><span></span> EST. DECEMBER 2025</div>
+    <h1>BUILT BY <em>PASSION.</em><br>UNITED BY PURPOSE.</h1>
+    <p class="hero-lead">TitikNgumpul is an esports team built on passion, teamwork, and the ambition to grow beyond every challenge. We compete together, learn together, and strive to become better with every step of the journey.</p>
+    <div class="hero-actions"><a class="btn primary" href="#services">Explore TitikNgumpul</a><a class="btn ghost" href="https://instagram.com/titikngumpul._" target="_blank" rel="noopener">Instagram ↗</a></div>
+    <div class="motto">TOGETHER WE GROW.</div>
+  </div>
+  <div class="hero-mark"><div class="glow"></div><img src="logo-titikngumpul.png" alt="TitikNgumpul mascot logo"></div>
+</section>
 
-<section id="seasons" class="section"><div class="section-head"><div><div class="eyebrow">CURRENT SEASON</div><h2 id="seasonTitle">Memuat...</h2></div><select id="seasonSelect" class="select"></select></div>
-<div class="season-info"><div class="season-card"><span class="label">STATUS</span><h3 id="seasonStatus">—</h3><div class="meta"><span id="seasonTeams">0 Teams</span><span id="syncState">● Connecting...</span></div></div>
-<div class="season-card"><span class="label">REGISTRASI</span><h3 id="seasonRegistration">0 / 0 Teams</h3><div class="progress"><span id="registrationProgress"></span></div><p id="seasonDesc">—</p></div></div></section>
+<section id="services" class="section-shell services-section">
+  <div class="section-heading"><span class="kicker">WHAT WE DO</span><h2>Choose your <em>next move.</em></h2><p>Everything TitikNgumpul in one place.</p></div>
+  <div class="service-grid">
+    <a class="service-card featured" href="#tournament"><span class="service-no">01</span><div class="service-icon">TN</div><h3>Tournament</h3><p>Live seasons, registration, brackets and match results.</p><span class="service-link">Enter tournament →</span></a>
+    <a class="service-card" href="#trial"><span class="service-no">02</span><div class="service-icon">TR</div><h3>Request Trial</h3><p>Trial request for players and coaches.</p><span class="service-link">Request a trial →</span></a>
+    <a class="service-card" href="#catalog"><span class="service-no">03</span><div class="service-icon">JR</div><h3>Jersey Catalog</h3><p>Without collar, collar and custom team jersey.</p><span class="service-link">Shop jersey →</span></a>
+    <a class="service-card" href="#poster"><span class="service-no">04</span><div class="service-icon">DS</div><h3>Poster Design</h3><p>Event and esports poster design by TitikNgumpul.</p><span class="service-link">Talk to Shion →</span></a>
+    <a class="service-card wide" href="#sponsor"><span class="service-no">05</span><div class="service-icon">SP</div><h3>Open for Sponsorship</h3><p>Partner with TitikNgumpul and grow together through esports.</p><span class="service-link">Partner with us →</span></a>
+  </div>
+</section>
 
-<section id="bracket" class="section"><div class="section-head"><div><div class="eyebrow">LIVE BRACKET</div><h2>Bracket Tournament</h2></div><span class="hint">Update realtime</span></div><div id="bracketView" class="bracket"></div></section>
+<section id="about" class="section-shell about-section">
+  <div class="about-logo"><img src="logo-titikngumpul.png" alt="TitikNgumpul"></div>
+  <div><span class="kicker">TITIKNGUMPUL</span><h2>More than a team.<br><em>A growing community.</em></h2><p>TitikNgumpul is an esports team built on passion, teamwork, and the ambition to grow beyond every challenge. We compete together, learn together, and strive to become better with every step of the journey.</p><div class="about-line"><strong>EST. DECEMBER 2025</strong><span>TOGETHER WE GROW.</span></div></div>
+</section>
 
-<section id="community" class="section"><div class="section-head"><div><div class="eyebrow">OFFICIAL COMMUNITY</div><h2>Temukan TitikNgumpul</h2></div></div>
-<div class="community-grid"><a class="community-card" href="https://chat.whatsapp.com/CWr6KHPwlFFGxHJnWDrZiI" target="_blank" rel="noopener"><div class="icon">WA</div><div><b>WhatsApp Community</b><p>Gabung komunitas resmi TitikNgumpul.</p></div><span>↗</span></a>
-<a class="community-card" href="https://instagram.com/titikngumpul._" target="_blank" rel="noopener"><div class="icon">IG</div><div><b>@titikngumpul._</b><p>Instagram resmi TitikNgumpul.</p></div><span>↗</span></a></div>
-<div class="contact-panel"><div><div class="eyebrow">ADMIN & PANITIA</div><h3>Butuh bantuan?</h3><p>Hubungi tim TitikNgumpul.</p></div><div id="contacts" class="contacts"></div></div></section>
+<section id="tournament" class="section-shell content-section">
+  <div class="section-heading row"><div><span class="kicker">01 / TOURNAMENT</span><h2>Play. Compete. <em>Grow.</em></h2><p>Public live view. Admin changes are synchronized through Supabase realtime.</p></div><a class="btn primary" id="registerTournament" href="https://wa.me/6283125637801?text=Halo%20Una%2C%20saya%20ingin%20registrasi%20TitikNgumpul%20Tournament.%20Mohon%20info%20season%20yang%20sedang%20dibuka." target="_blank" rel="noopener">Register via Una ↗</a></div>
+  <div class="season-bar"><div><span class="label">CURRENT SEASON</span><h3 id="seasonTitle">Loading...</h3></div><select id="seasonSelect" class="select"></select><div class="live"><span></span> LIVE</div></div>
+  <div class="stats-grid"><div class="stat"><span>STATUS</span><strong id="seasonStatus">—</strong></div><div class="stat"><span>REGISTERED</span><strong id="seasonRegistration">0 / 0</strong></div><div class="stat"><span>TEAMS</span><strong id="seasonTeams">0</strong></div><div class="stat"><span>SYNC</span><strong id="syncState">Connecting...</strong></div></div>
+  <div class="progress-wrap"><div class="progress"><span id="registrationProgress"></span></div><p id="seasonDesc">—</p></div>
+  <div class="bracket-head"><div><span class="kicker">LIVE BRACKET</span><h3>Current Matchups</h3></div><span class="bracket-note">Updates automatically</span></div>
+  <div id="bracketView" class="bracket"></div>
+</section>
 
-<section id="jersey" class="section"><div class="section-head"><div><div class="eyebrow">TN MERCH</div><h2>Catalog Jersey</h2></div><span class="hint">Pesan melalui WhatsApp admin.</span></div>
-<div class="products"><article class="product"><div class="product-art"><img src="logo-titikngumpul.png" alt="TN Jersey"></div><div class="product-body"><span class="tag">BEST SELLER</span><h3>TN Esports Jersey</h3><p>Jersey komunitas TitikNgumpul.</p><button class="outline-btn order" data-product="TN Esports Jersey">Pesan Jersey</button></div></article>
-<article class="product"><div class="product-art alt"><img src="logo-titikngumpul.png" alt="TN Collared Jersey"></div><div class="product-body"><span class="tag">COLLARED</span><h3>TN Collared Jersey</h3><p>Versi berkerah dengan tampilan elegan.</p><button class="outline-btn order" data-product="TN Collared Jersey">Pesan Jersey</button></div></article>
-<article class="product"><div class="product-art dark"><img src="logo-titikngumpul.png" alt="Custom Team Jersey"></div><div class="product-body"><span class="tag">CUSTOM</span><h3>Custom Team Jersey</h3><p>Custom nama, nomor, dan identitas tim.</p><button class="outline-btn order" data-product="Custom Team Jersey">Tanya Admin</button></div></article></div></section>
+<section id="trial" class="section-shell content-section alt-section">
+  <div class="section-heading"><span class="kicker">02 / TRIAL REQUEST</span><h2>Player & Coach <em>Trials.</em></h2><p>Tell us about your role, experience and what you want to build with TitikNgumpul.</p></div>
+  <div class="contact-cta"><div><span class="label">TRIAL CONTACT</span><h3>Gary & Una</h3><p>Open for player and coach trial requests.</p></div><div class="cta-actions"><a class="btn primary" href="https://wa.me/6590585717?text=Halo%20Gary%2C%20saya%20ingin%20request%20trial%20sebagai%20player%2Fcoach%20di%20TitikNgumpul." target="_blank" rel="noopener">Gary ↗</a><a class="btn ghost" href="https://wa.me/6283125637801?text=Halo%20Una%2C%20saya%20ingin%20request%20trial%20sebagai%20player%2Fcoach%20di%20TitikNgumpul." target="_blank" rel="noopener">Una ↗</a></div></div>
+</section>
+
+<section id="catalog" class="section-shell content-section">
+  <div class="section-heading row"><div><span class="kicker">03 / CATALOG</span><h2>Wear the <em>TN identity.</em></h2><p>Three ways to represent TitikNgumpul.</p></div><a class="btn ghost" href="https://wa.me/6283125637801?text=Halo%20Una%2C%20saya%20ingin%20tanya%20catalog%20jersey%20TitikNgumpul." target="_blank" rel="noopener">Ask Una ↗</a></div>
+  <div class="catalog-tabs"><button class="catalog-tab active" data-cat="without">01 / Without Collar</button><button class="catalog-tab" data-cat="collar">02 / Collar Jersey</button><button class="catalog-tab" data-cat="custom">03 / Custom Jersey</button></div>
+  <div class="catalog-panel active" data-panel="without"><div class="catalog-image"><img src="Black And Gold Esports Jersey Board.png" alt="TitikNgumpul without collar jersey"></div><div class="catalog-copy"><span class="label">WITHOUT COLLAR</span><h3>Black & Gold TN Jersey</h3><p>Clean, aggressive and elegant. Designed around TitikNgumpul's black, gold and cream identity.</p><ul><li>Esports polyester</li><li>Breathable & quick dry</li><li>TN identity details</li></ul><a class="btn primary" href="https://wa.me/6283125637801?text=Halo%20Una%2C%20saya%20tertarik%20dengan%20TN%20Jersey%20Without%20Collar." target="_blank" rel="noopener">Order via Una ↗</a></div></div>
+  <div class="catalog-panel" data-panel="collar"><div class="catalog-image"><img src="Cream and Black Esports Jersey Redesign Board(1).png" alt="TitikNgumpul collar jersey"></div><div class="catalog-copy"><span class="label">COLLAR JERSEY</span><h3>Cream / Black Collared Jersey</h3><p>A more premium collared silhouette with the same TN visual language.</p><ul><li>Elegant collar finish</li><li>Black / cream / gold palette</li><li>Suitable for team & community</li></ul><a class="btn primary" href="https://wa.me/6283125637801?text=Halo%20Una%2C%20saya%20tertarik%20dengan%20TN%20Collar%20Jersey." target="_blank" rel="noopener">Order via Una ↗</a></div></div>
+  <div class="catalog-panel" data-panel="custom"><div class="custom-design"><div class="custom-jersey"><span>TN</span><b>TITIKNGUMPUL</b><small>CUSTOM TEAM</small></div><div class="custom-back"><span>07</span><b>YOUR TEAM</b></div></div><div class="catalog-copy"><span class="label">CUSTOM JERSEY</span><h3>Built for your squad.</h3><p>Custom team jersey concept with your team name, colors, number, player names and identity. We can adapt the layout to your team's character.</p><ul><li>Custom name & number</li><li>Custom color direction</li><li>Team identity consultation</li></ul><a class="btn primary" href="https://wa.me/6283125637801?text=Halo%20Una%2C%20saya%20tertarik%20dengan%20Custom%20Jersey%20TitikNgumpul." target="_blank" rel="noopener">Custom Order ↗</a></div></div>
+</section>
+
+<section id="poster" class="section-shell content-section alt-section">
+  <div class="split-service"><div><span class="kicker">04 / DESIGN SERVICE</span><h2>Make your event <em>look official.</em></h2><p>Poster design for tournaments, match days, announcements, player reveals and esports events.</p><a class="btn primary" href="https://wa.me/6285933738126?text=Halo%20Shion%2C%20saya%20ingin%20tanya%20jasa%20design%20poster%20TitikNgumpul." target="_blank" rel="noopener">Contact Shion ↗</a></div><div class="poster-art"><div class="poster-glow"></div><div class="poster-card"><small>TITIKNGUMPUL</small><strong>GAME<br>DAY</strong><span>DESIGN SERVICE</span></div></div></div>
+</section>
+
+<section id="sponsor" class="section-shell content-section sponsor-section">
+  <div class="sponsor-box"><div><span class="kicker">05 / PARTNERSHIP</span><h2>Open for <em>sponsorship.</em></h2><p>Let's build a stronger esports ecosystem together. We're open to brand partnerships, event sponsorships and community collaborations.</p></div><a class="btn primary" href="https://wa.me/6590585717?text=Halo%20Gary%2C%20saya%20ingin%20membahas%20sponsorship%20dengan%20TitikNgumpul." target="_blank" rel="noopener">Talk to Gary ↗</a></div>
+</section>
+
+<section id="community" class="section-shell content-section">
+  <div class="section-heading"><span class="kicker">COMMUNITY</span><h2>Stay in the <em>loop.</em></h2></div>
+  <div class="community-grid"><a href="https://chat.whatsapp.com/CWr6KHPwlFFGxHJnWDrZiI" target="_blank" rel="noopener"><span>WA</span><div><b>WhatsApp Community</b><small>Join the official community.</small></div>↗</a><a href="https://instagram.com/titikngumpul._" target="_blank" rel="noopener"><span>IG</span><div><b>@titikngumpul._</b><small>Follow the journey.</small></div>↗</a></div>
+  <div class="contacts"><div><span class="label">ADMIN & PANITIA</span><h3>Need help?</h3></div><div id="contactsList"></div></div>
+</section>
 </main>
-<footer><div class="brand"><img src="logo-titikngumpul.png" alt=""><span>Titik<span>Ngumpul</span></span></div><p>© 2026 TitikNgumpul. Together We Grow.</p></footer>
+<footer><div class="brand"><img src="logo-titikngumpul.png" alt=""><span>TITIK<span>NGUMPUL</span></span></div><div>EST. DECEMBER 2025 · TOGETHER WE GROW.</div></footer>
 
-<div id="adminModal" class="modal"><div class="admin-shell"><button class="x" id="adminClose">×</button>
-<div id="loginPanel"><div class="eyebrow">SECURE ADMIN</div><h2>Admin TitikNgumpul</h2><p class="muted">Login untuk mengelola season, registrasi tim, bracket, dan hasil.</p><label>Email<input id="loginEmail" type="email" autocomplete="username" placeholder="admin@email.com"></label><label>Password<input id="loginPassword" type="password" autocomplete="current-password" placeholder="••••••••"></label><button class="gold-btn full" id="loginBtn">Login Admin</button><p id="loginMsg" class="form-msg"></p></div>
-<div id="adminPanel" class="hidden"><div class="admin-top"><div><div class="eyebrow">CONTROL CENTER</div><h2>Admin TitikNgumpul</h2></div><button class="outline-btn" id="logoutBtn">Logout</button></div>
-<div class="admin-tabs"><button class="at active" data-panel="seasonAdmin">Seasons</button><button class="at" data-panel="teamAdmin">Registrasi Tim</button><button class="at" data-panel="matchAdmin">Bracket</button></div>
-<div id="seasonAdmin" class="ap active"><div class="admin-row"><input id="newSeasonName" placeholder="TN Championship S02"><input id="newSeasonSize" type="number" min="2" max="128" value="16" title="Target registrasi"><button class="gold-btn" id="createSeason">+ Buat Season</button></div><div id="seasonList"></div></div>
-<div id="teamAdmin" class="ap"><div class="admin-row"><select id="adminSeasonSelect" class="select"></select><input id="newTeamName" placeholder="Nama tim terdaftar"><button class="gold-btn" id="addTeam">+ Tambah Tim</button></div><div class="admin-note">Jumlah Teams di halaman publik selalu mengikuti jumlah registrasi aktual. Target hanya batas maksimal registrasi.</div><div id="teamList"></div></div>
-<div id="matchAdmin" class="ap"><div class="admin-row"><select id="adminMatchSeason" class="select"></select><button class="outline-btn" id="generateBracket">Buat/Rebuild Bracket</button><button class="outline-btn" id="resetSeason">Reset Skor</button></div><div class="admin-note">Anda bisa mengoreksi nama tim dan skor kapan saja. Setelah disimpan, data masuk ke database online dan pengunjung menerima perubahan.</div><div id="matchEditor"></div><button class="gold-btn full" id="saveBracket">Simpan & Update Bracket</button></div>
-</div></div></div>
+<div id="adminModal" class="modal"><div class="admin-shell"><button class="modal-close" id="adminClose">×</button><div id="loginPanel"><span class="kicker">SECURE ADMIN</span><h2>Admin Control Center</h2><p>Only authenticated admins can change tournament data.</p><label>Email<input id="loginEmail" type="email" autocomplete="username"></label><label>Password<input id="loginPassword" type="password" autocomplete="current-password"></label><button class="btn primary full" id="loginBtn">Login</button><p id="loginMsg" class="form-msg"></p></div>
+<div id="adminPanel" class="hidden"><div class="admin-head"><div><span class="kicker">CONTROL CENTER</span><h2>Tournament Management</h2></div><button class="btn ghost" id="logoutBtn">Logout</button></div><div class="admin-tabs"><button class="at active" data-panel="seasonAdmin">Seasons</button><button class="at" data-panel="teamAdmin">Participants</button><button class="at" data-panel="matchAdmin">Bracket</button></div>
+<div id="seasonAdmin" class="ap active"><div class="admin-card"><h3>Create season</h3><div class="admin-row"><input id="newSeasonName" placeholder="TN Championship S10"><input id="newSeasonSize" type="number" min="2" max="128" value="16"><button class="btn primary" id="createSeason">+ Create</button></div></div><div id="seasonList"></div></div>
+<div id="teamAdmin" class="ap"><div class="admin-card"><h3>Participants</h3><div class="admin-row"><select id="adminSeasonSelect" class="select"></select><input id="newTeamName" placeholder="Team name"><button class="btn primary" id="addTeam">+ Add</button></div><div class="admin-note">Add or remove participants at any time. Target size is editable from Season settings.</div></div><div id="teamList"></div></div>
+<div id="matchAdmin" class="ap"><div class="admin-card"><h3>Bracket editor</h3><div class="admin-row"><select id="adminMatchSeason" class="select"></select><button class="btn ghost" id="shuffleBracket">Shuffle</button><button class="btn ghost" id="generateBracket">Rebuild</button><button class="btn ghost" id="resetSeason">Reset scores</button></div><div class="admin-note">Shuffle randomizes the registered teams and rebuilds the bracket. Changes are saved to Supabase and visible to everyone in realtime.</div></div><div id="matchEditor"></div><button class="btn primary full" id="saveBracket">Save & Update Bracket</button></div></div></div></div>
+
+<div id="seasonEditorModal" class="modal nested"><div class="season-editor"><button class="modal-close" id="seasonEditorClose">×</button><span class="kicker">SEASON SETTINGS</span><h2>Edit Season</h2><input id="editSeasonId" type="hidden"><label>Season name<input id="editSeasonName"></label><label>Target teams<input id="editSeasonTarget" type="number" min="2" max="128"></label><label>Status<select id="editSeasonStatus"><option>Pendaftaran</option><option>Berlangsung</option><option>Selesai</option></select></label><label>Description<textarea id="editSeasonDescription" rows="4"></textarea></label><div class="editor-actions"><button class="btn ghost" id="deleteSeason">Delete Season</button><button class="btn primary" id="saveSeasonEdit">Save changes</button></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="script.js"></script>
 </body></html>
